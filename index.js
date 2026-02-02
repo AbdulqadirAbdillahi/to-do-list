@@ -12,6 +12,21 @@ buttonEl.addEventListener("click", onclickButton);
 function onclickButton(){
 
     let inputEl = input.value;
+
+    if (inputEl === "") {
+        alert("Please write a task to add!");
+        return;
+    }
+
+    // this is creates an alert if the user hasnt typed anything in, will pop up on the browser
+
+    input.value = "";
+
+    // clears the input field when the user has typed
+
+
+
+
     // whatever the user has typed store it in inputEl
     let divItem = document.createElement("div");
     // create a new html element (remember it does not exist yet)
@@ -37,4 +52,5 @@ function onclickButton(){
        tasklist.appendChild(divItem)
     //    appears on the page so user can see it
     // also, has to be outside the function, otherwise it doesnt work!
+
 }
