@@ -4,7 +4,9 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 40px;
 }
+
 
 #input{
     width: 250px;
@@ -18,11 +20,23 @@ body{
 
 #add-button{
       font-size: 15px;
-      background-color: deepskyblue;
+      background-color: rgb(13, 226, 38);
       color: white;
       cursor: pointer;
-      border: 3px solid rgb(32, 82, 209);
+      border: 3px solid rgb(12, 228, 62);
 
+}
+
+#tasklist div{
+    margin-top: 20px;
+}
+
+#tasklist button {
+    margin-left: 10px;
+    padding: 5px 5px;
+    background-color: rgb(230, 111, 20);
+    color: white;
+    border: none;
 }
 
 #tasklist button:hover{
