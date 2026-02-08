@@ -34,6 +34,15 @@ function onclickButton(){
     // added users text inside the new div, so when user types, add eggs in the inputfield
     // it then gets added
 
+    let editBtn = document.createElement("button");
+    editBtn.textContent = "edit";
+
+    editBtn.addEventListener("click", function(){
+        divItem.firstChild.textContent = prompt("Edit task");
+    });
+
+
+
     let deleteButton = document.createElement("button");
     // creates a new html button element
       deleteButton.textContent = "Delete";
@@ -49,8 +58,8 @@ function onclickButton(){
 
        divItem.appendChild(deleteButton);
     //    adds the delete button inside the task div
-       tasklist.appendChild(divItem)
+       tasklist.appendChild(divItem);
     //    appears on the page so user can see it
     // also, has to be outside the function, otherwise it doesnt work!
-
+       divItem.appendChild(editBtn);
 }
