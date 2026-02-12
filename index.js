@@ -35,7 +35,7 @@ function onclickButton(){
     // it then gets added
 
     let editBtn = document.createElement("button");
-    editBtn.textContent = "edit";
+    editBtn.textContent = "Edit";
 
     editBtn.addEventListener("click", function(){
         divItem.firstChild.textContent = prompt("Edit task");
